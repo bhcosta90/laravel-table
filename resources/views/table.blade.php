@@ -1,4 +1,4 @@
-<table class="{{ $class or 'table' }}">
+<table class="{{ $class ?? 'table' }}">
     @if(count($columns))
 	<thead>
 		<tr>
