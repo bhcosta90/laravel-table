@@ -19,9 +19,9 @@ Require the package in your `composer.json`:
 Add the service provider to `config/app.php` and, optionally, the Facade:
 
 ```php
-'Gbrock\Table\Providers\TableServiceProvider',
+'Costa\Table\Providers\TableServiceProvider',
 ...
-'Table'      => 'Gbrock\Table\Facades\Table',
+'Table'      => 'Costa\Table\Facades\Table',
 ```
 
 Publish the views and config:
@@ -62,7 +62,7 @@ To add links in your headers which sort the indicated column, add the `Sortable`
 fields are allowed to be sorted by default (for security reasons), also add a `sortable` array containing allowed fields.
 
 ```php
-use Gbrock\Table\Traits\Sortable;
+use Costa\Table\Traits\Sortable;
 
 class User extends Model {
 

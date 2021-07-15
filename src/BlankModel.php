@@ -1,6 +1,6 @@
 <?php
 
-namespace Gbrock\Table;
+namespace Costa\Table;
 
 use Illuminate\Contracts\Support\Arrayable;
 

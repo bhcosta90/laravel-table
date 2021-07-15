@@ -1,4 +1,4 @@
-<?php namespace Gbrock\Table;
+<?php namespace Costa\Table;
 
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Input;

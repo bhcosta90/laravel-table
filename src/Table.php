@@ -1,7 +1,7 @@
-<?php namespace Gbrock\Table;
+<?php namespace Costa\Table;
 
 use Illuminate\Support\Facades\Input;
-use Gbrock\Table\Column;
+use Costa\Table\Column;
 
 class Table
 {

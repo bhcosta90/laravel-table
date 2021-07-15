@@ -1,4 +1,4 @@
-<?php namespace Gbrock\Table\Facades;
+<?php namespace Costa\Table\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

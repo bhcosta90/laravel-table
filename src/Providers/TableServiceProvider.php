@@ -1,6 +1,6 @@
-<?php namespace Gbrock\Table\Providers;
+<?php namespace Costa\Table\Providers;
 
-use Gbrock\Table\Table;
+use Costa\Table\Table;
 use Illuminate\Support\ServiceProvider;
 
 class TableServiceProvider extends ServiceProvider {

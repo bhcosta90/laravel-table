@@ -1,4 +1,4 @@
-<?php namespace Gbrock\Table\Traits;
+<?php namespace Costa\Table\Traits;
 
 use Illuminate\Support\Facades\Request;
 
@@ -118,4 +118,3 @@ trait Sortable {
         return true;
     }
 }
-
