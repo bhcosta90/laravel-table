@@ -20,7 +20,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Gbrock\\Table\\": "src/"
+            "Costa\\Table\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Costa\\Table\\Providers\\TableServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
 }
