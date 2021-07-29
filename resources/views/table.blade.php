@@ -1,3 +1,4 @@
+@if(count($rows) > 0)
 <table class="{{ $class ?? 'table' }}">
     @if(count($columns))
 	<thead>
@@ -47,6 +48,9 @@
         @endif
 	</tbody>
 </table>
+@else
+    <div class='alert alert-info text-center'>{{ __('Do not results') }}</div>
+@endif
 
 @if(is_object($rows) && class_basename(get_class($rows)) == 'LengthAwarePaginator')
     {{-- Collection is paginated, so render that --}}
