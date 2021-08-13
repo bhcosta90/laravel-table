@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Costa\\Table\\": "src/"
+            "Costa\\LaravelTable\\": "src/"
         }
     },
     "extra": {
