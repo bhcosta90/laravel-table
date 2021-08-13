@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Request;
 use Costa\LaravelTable\Column;
 
-class LaravelTable
+class Table
 {
     protected $models;
     protected $columns;

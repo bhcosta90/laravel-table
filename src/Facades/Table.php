@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class LaravelTable extends Facade {
+class Table extends Facade {
 
     protected static function getFacadeAccessor() { return 'table'; }
 

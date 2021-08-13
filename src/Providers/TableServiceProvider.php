@@ -3,7 +3,7 @@
 use Costa\LaravelTable\LaravelTable;
 use Illuminate\Support\ServiceProvider;
 
-class LaravelTableServiceProvider extends ServiceProvider {
+class TableServiceProvider extends ServiceProvider {
 
     /**
      * Register bindings in the container.
