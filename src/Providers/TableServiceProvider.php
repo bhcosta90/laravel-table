@@ -1,6 +1,6 @@
 <?php namespace Costa\LaravelTable\Providers;
 
-use Costa\LaravelTable\LaravelTable;
+use Costa\LaravelTable\Table;
 use Illuminate\Support\ServiceProvider;
 
 class TableServiceProvider extends ServiceProvider {
@@ -13,7 +13,7 @@ class TableServiceProvider extends ServiceProvider {
     {
         $this->app->bind('table', function()
         {
-            return new LaravelTable;
+            return new Table;
         });
     }
 
