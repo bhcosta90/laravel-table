@@ -1,8 +1,8 @@
-<?php namespace Costa\Table\Facades;
+<?php namespace Costa\LaravelTable\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Table extends Facade {
+class LaravelTable extends Facade {
 
     protected static function getFacadeAccessor() { return 'table'; }
 

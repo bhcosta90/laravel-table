@@ -1,4 +1,4 @@
-<?php namespace Costa\Table;
+<?php namespace Costa\LaravelTable;
 
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\URL;

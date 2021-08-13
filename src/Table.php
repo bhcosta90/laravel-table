@@ -1,9 +1,9 @@
-<?php namespace Costa\Table;
+<?php namespace Costa\LaravelTable;
 
 use Illuminate\Support\Facades\Request;
-use Costa\Table\Column;
+use Costa\LaravelTable\Column;
 
-class Table
+class LaravelTable
 {
     protected $models;
     protected $columns;

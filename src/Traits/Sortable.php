@@ -1,4 +1,4 @@
-<?php namespace Costa\Table\Traits;
+<?php namespace Costa\LaravelTable\Traits;
 
 use Illuminate\Support\Facades\Request;
 
@@ -54,7 +54,7 @@ trait Sortable {
         }
 
         // By default assume the $field is a member of the $sortable array
-        $sortField = strpos($field, '.') === FALSE ? $this->getTable() . '.' . $field : $field;
+        $sortField = strpos($field, '.') === FALSE ? $this->getLaravelTable() . '.' . $field : $field;
 
         if($isKeyOfSortable)
         {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Costa\Table;
+namespace Costa\LaravelTable;
 
 use Illuminate\Contracts\Support\Arrayable;
 

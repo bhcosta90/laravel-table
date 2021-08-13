@@ -1,9 +1,9 @@
-<?php namespace Costa\Table\Providers;
+<?php namespace Costa\LaravelTable\Providers;
 
-use Costa\Table\Table;
+use Costa\LaravelTable\LaravelTable;
 use Illuminate\Support\ServiceProvider;
 
-class TableServiceProvider extends ServiceProvider {
+class LaravelTableServiceProvider extends ServiceProvider {
 
     /**
      * Register bindings in the container.
@@ -13,7 +13,7 @@ class TableServiceProvider extends ServiceProvider {
     {
         $this->app->bind('table', function()
         {
-            return new Table;
+            return new LaravelTable;
         });
     }
 
