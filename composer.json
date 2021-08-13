@@ -29,9 +29,7 @@
         "laravel": {
             "providers": [
                 "Costa\\LaravelTable\\Providers\\TableServiceProvider"
-            ],
-            "aliases": {
-            }
+            ]
         }
     }
 }
