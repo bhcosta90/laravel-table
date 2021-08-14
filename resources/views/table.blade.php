@@ -49,7 +49,7 @@
         </tbody>
     </table>
 @else
-    <div class='alert alert-info text-center'>{{ __('Do not results') }}</div>
+    <div class='alert alert-info text-center alert-table-no-result'>{{ __('Do not results') }}</div>
 @endif
 
 @if(is_object($rows) && class_basename(get_class($rows)) == 'LengthAwarePaginator')
