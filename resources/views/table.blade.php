@@ -1,5 +1,5 @@
 @if(count($rows) > 0)
-    <table class="{{ $class ?? 'table' }}">
+    <table class="{{ $class ?? 'table table-responsive-md' }}">
         @if(count($columns))
         <thead>
             <tr>
