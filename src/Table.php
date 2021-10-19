@@ -1,4 +1,6 @@
-<?php namespace Costa\LaravelTable;
+<?php
+
+namespace Costa\LaravelTable;
 
 use Illuminate\Support\Facades\Request;
 use Costa\LaravelTable\Column;
@@ -73,7 +75,7 @@ class Table
 
         $new_column->setOptionsFromModel($model);
 
-        $this->columns[] =& $new_column;
+        $this->columns[] = &$new_column;
 
         return $new_column;
     }
@@ -195,8 +197,7 @@ class Table
             }
         }
 
-        if(class_basename($models->first()) == 'stdClass')
-        {
+        if (class_basename($models->first()) == 'stdClass') {
             $models = $models->map(function ($array) {
                 return new BlankModel($array);
             });
@@ -220,8 +221,10 @@ class Table
     {
         if (class_basename($this->models) == 'LengthAwarePaginator') {
             // This set of models was paginated.  Make it append our current view variables.
-            $this->models->appends(Request::only(config('gbrock-tables.key_field'),
-                config('gbrock-tables.key_direction')));
+            $this->models->appends(Request::only(
+                config('gbrock-tables.key_field'),
+                config('gbrock-tables.key_direction')
+            ));
         }
     }
 }

@@ -4,7 +4,8 @@ namespace Costa\LaravelTable;
 
 use Illuminate\Contracts\Support\Arrayable;
 
-class BlankModel implements Arrayable {
+class BlankModel implements Arrayable
+{
     private $attributes;
 
     public function __construct($attributes)
