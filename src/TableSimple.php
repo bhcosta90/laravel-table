@@ -87,9 +87,15 @@ class TableSimple
 
                 $label = $k;
                 if(in_array($k, ['edit', 'delete', 'show'])){
-                    $label = null;
+                    $label = '';
                 }
-                $table->addColumn($k, $label, $func)->addClass((is_array($nColumn) && $nColumn['class'] ?? null));
+                
+                $class = null;
+                if(is_array($nColumn) && !empty($nColumn['class'])){
+                    $class = $nColumn['class'];
+                }
+
+                $table->addColumn($k, $label, $func)->addClass($class ?? null);
             }
         }
 
