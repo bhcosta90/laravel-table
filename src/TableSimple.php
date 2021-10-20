@@ -86,12 +86,12 @@ class TableSimple
                 }
 
                 $label = $k;
-                if(in_array($k, ['edit', 'delete', 'show'])){
+                if (substr($k, 0, 1) == '_' || in_array($k, ['edit', 'delete', 'show'])) {
                     $label = '';
                 }
-                
+
                 $class = null;
-                if(is_array($nColumn) && !empty($nColumn['class'])){
+                if (is_array($nColumn) && !empty($nColumn['class'])) {
                     $class = $nColumn['class'];
                 }
 
