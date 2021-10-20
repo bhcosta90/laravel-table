@@ -85,7 +85,7 @@ class TableSimple
                     $func = $nColumn['action'];
                 }
 
-                $table->addColumn($k, '', $func)->addClass($nColumn['class'] ?? null);
+                $table->addColumn($k, '', $func)->addClass((is_array($nColumn) && $nColumn['class'] ?? null));
             }
         }
 
