@@ -85,7 +85,11 @@ class TableSimple
                     $func = $nColumn['action'];
                 }
 
-                $table->addColumn($k, '', $func)->addClass((is_array($nColumn) && $nColumn['class'] ?? null));
+                $label = $k;
+                if(in_array($k, ['edit', 'delete', 'show'])){
+                    $label = null;
+                }
+                $table->addColumn($k, $label, $func)->addClass((is_array($nColumn) && $nColumn['class'] ?? null));
             }
         }
 
