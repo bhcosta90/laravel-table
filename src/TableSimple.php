@@ -11,7 +11,7 @@ class TableSimple
 
     protected $columns;
 
-    protected $addColumns;
+    protected $addColumns = [];
 
     /**
      * Get the value of data
