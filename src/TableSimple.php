@@ -11,8 +11,6 @@ class TableSimple
 
     protected $columns;
 
-    protected $addColumns = [];
-
     /**
      * Get the value of data
      */
@@ -49,36 +47,15 @@ class TableSimple
     public function setColumns($columns)
     {
         $this->columns = $columns;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of addColumns
-     */
-    public function getAddColumns()
-    {
-        return $this->addColumns;
-    }
-
-    /**
-     * Set the value of addColumns
-     *
-     * @return  self
-     */
-    public function setAddColumns($addColumns)
-    {
-        $this->addColumns = $addColumns;
-
         return $this;
     }
 
     public function run()
     {
-        $table = FacadesTable::create($this->getData(), $this->getColumns());
+        $table = FacadesTable::create($this->getData(), false);
 
-        if (count($this->getAddColumns()) > 0) {
-            foreach ($this->getAddColumns() as $k => $columns) {
+        if (count($this->getColumns()) > 0) {
+            foreach ($this->getColumns() as $k => $columns) {
                 $nColumn = $columns;
                 $func = $columns;
                 if (is_array($nColumn)) {
